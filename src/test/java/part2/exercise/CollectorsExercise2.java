@@ -214,7 +214,9 @@ public class CollectorsExercise2 {
 
         // final Map<Key, List<Value>> keyValuesMap2 = valueMap2.entrySet().stream()...
 
-        // Получение результата сразу:
+        //for (...) {...}
+
+        // Optional Получение результата сразу:
 
         final SubResult res3 = pairs.stream()
                 .collect(new Collector<Pair, SubResult, SubResult>() {

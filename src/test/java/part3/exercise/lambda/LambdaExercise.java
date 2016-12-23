@@ -53,11 +53,7 @@ public class LambdaExercise {
         final Function<Person, Integer> getPersonNameLength1 = p -> getStringLength.apply(getPersonName.apply(p));
 
         // TODO get person name length using getPersonName and getStringLength with andThen
-        final Function<Person, Integer> getPersonNameLength2 = p -> getPersonName.andThen(getStringLength).apply(p);
-     //   final Function<Person, Integer> getPersonNameLength2 = p -> getPersonName.andThen(String::length).apply(p);
-
-        //Simplify
-
+        final Function<Person, Integer> getPersonNameLength2 = getPersonName.andThen(getStringLength);
 
         final Person person = new Person("John", "Galt", 30);
 
